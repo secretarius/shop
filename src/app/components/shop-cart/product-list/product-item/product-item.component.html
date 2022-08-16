@@ -1,0 +1,19 @@
+<div class="card mb-4 shadow-sm h-100">
+  <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="productItem.images[0]"/>
+
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-between align-items-center">
+      <button type="button" class="btn btn-sm btn-primary product-btn btn-text-size">{{productItem.rating}} <fa-icon [icon]="faStar"></fa-icon></button>
+      <strong>{{ productItem.price / 40 | currency:'USD' }}</strong>
+    </p>
+    <p class="card-text">{{ productItem.title | slice: 0:80 }}...</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-outline-secondary product-btn"><fa-icon [icon]="faHeart"></fa-icon> WishList</button>
+        <button type="button" class="btn btn-sm btn-primary product-btn" (click)="handleAddToCart()"> <fa-icon [icon]="faCart"></fa-icon> Add to
+          Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

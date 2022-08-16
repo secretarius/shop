@@ -1,0 +1,12 @@
+<div class="card-text d-flex justify-content-between align-items-center mb-2">
+<div>{{productList.length}} results found</div>
+  <button type="button" class="btn btn-sm btn-primary product-btn btn-text-size"><fa-icon [icon]="faHeart"></fa-icon></button>
+</div>
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+<div class="row">
+  <div class="col-md-4 mb-2" *ngFor="let product of productList">
+    <div *ngIf="searchText === '' || product.brand.toLowerCase().includes(searchText)">
+    <app-product-item [productItem]="product"></app-product-item>
+    </div>
+  </div>
+</div>
