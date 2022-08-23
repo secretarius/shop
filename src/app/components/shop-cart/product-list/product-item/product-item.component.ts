@@ -12,6 +12,7 @@ import {WishlistService} from "../../../../services/wishlist.service";
 })
 export class ProductItemComponent implements OnInit {
   @Input() productItem!: Product;
+  //@Input() productToWishlist!: Product;
   faHeart = faHeart;
   faCart = faCartShopping;
   faStar = faStar;
@@ -29,15 +30,15 @@ export class ProductItemComponent implements OnInit {
   }
 
   handleAddToWishlist() {
-    this.wishListService.addToWishList(this.productItem.id).subscribe(() => {
-      this.addedToWishList = true;
+    this.wishListService.addProductToWishlist(this.productItem).subscribe(() => {
+      this.msg.sendMsg(this.productItem)
     })
   }
-
-  handleRemoveToWishlist() {
-    this.wishListService.removeFromWishList(this.productItem.id).subscribe(() => {
-      this.addedToWishList = false;
-    })
-  }
+  //
+  // handleRemoveToWishlist() {
+  //   this.wishListService.removeFromWishList(this.productItem.id).subscribe(() => {
+  //     this.msg.sendMsg(this.productItem)
+  //   })
+  // }
 
 }

@@ -15,6 +15,10 @@ import { CartItemComponent } from './components/shop-cart/cart/cart-item/cart-it
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SearchComponent } from './components/shared/search/search.component';
 import {FormsModule} from "@angular/forms";
+import {AppRoutingRoutingModule} from "./app-routing-routing.module";
+import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
+import {WishtListComponent} from "./components/shop-cart/wish-list/wish-list.component";
+import {WishItemComponent} from "./components/shop-cart/wish-list/wish-item/wish-item.component";
 
 @NgModule({
   declarations: [
@@ -29,13 +33,17 @@ import {FormsModule} from "@angular/forms";
     ProductItemComponent,
     CartItemComponent,
     SearchComponent,
+    PageNotFoundComponent,
+    WishtListComponent,
+    WishItemComponent
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    AppRoutingRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

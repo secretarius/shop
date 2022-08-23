@@ -1148,22 +1148,21 @@
       "brand": "kingston"
     }
   ],
-  "wishlist": [],
-  "cart": [
+  "wishlist": [
     {
       "product": {
-        "id": "0y9ksratv6akr9kjkav",
+        "id": "qeagrlm9lrkr9kjkav",
         "images": [
-          "https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg",
-          "https://content1.rozetka.com.ua/goods/images/big_tile/178060662.jpg"
+          "https://content1.rozetka.com.ua/goods/images/big_tile/178060622.jpg",
+          "https://content2.rozetka.com.ua/goods/images/big_tile/178060625.jpg"
         ],
-        "title": "Ноутбук Acer Aspire 7 A715-75G-51ZW (NH.Q88EU.00P) Charcoal Black",
-        "rating": 2.42,
-        "price": 22999,
+        "title": "Ноутбук Acer Aspire 7 A715-41G-R9KP (NH.Q8QEU.00L) Charcoal Black",
+        "rating": 1.96,
+        "price": 21500,
         "category": "laptops",
         "brand": "acer"
       },
-      "id": 1
+      "id": 8
     },
     {
       "product": {
@@ -1178,9 +1177,39 @@
         "category": "laptops",
         "brand": "acer"
       },
-      "id": 2
+      "id": 9
+    },
+    {
+      "product": {
+        "id": "0y9ksratv6akr9kjkav",
+        "images": [
+          "https://content2.rozetka.com.ua/goods/images/big_tile/178060660.jpg",
+          "https://content1.rozetka.com.ua/goods/images/big_tile/178060662.jpg"
+        ],
+        "title": "Ноутбук Acer Aspire 7 A715-75G-51ZW (NH.Q88EU.00P) Charcoal Black",
+        "rating": 2.42,
+        "price": 22999,
+        "category": "laptops",
+        "brand": "acer"
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": "uz2lnvfkq5kr9kjkav",
+        "images": [
+          "https://content2.rozetka.com.ua/goods/images/big_tile/12330253.jpg"
+        ],
+        "title": "Монитор 23\" Dell P2319H Black (210-APWT)",
+        "rating": 1.51,
+        "price": 5300,
+        "category": "monitors",
+        "brand": "dell"
+      },
+      "id": 11
     }
   ],
+  "cart": [  ],
   "categories": [
     "Monitors",
     "Laptops",
